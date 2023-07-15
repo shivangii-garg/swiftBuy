@@ -10,9 +10,9 @@ const HeadingBar = () => {
     <div className="heading-bar">
       <div className="group-one">
         <img src={envelopeSvg} alt="envelope icon" className="envelope-icon" />
-        <span>swiftBuy.help@gmail.com</span>
+        <span className="typography">swiftBuy.help@gmail.com</span>
         <img src={phoneSvg} alt="envelope icon" className="phone-icon" />
-        <span>(1234)56789</span>
+        <span className="typography">(1234)56789</span>
       </div>
       <div className="group-two">
         <select>
@@ -32,15 +32,15 @@ const HeadingBar = () => {
           <option>CNY</option>
           <option>MXN</option>
         </select>
-        <a href="#">
+        <a className="header-link" href="#">
           Login
           <img src={user} alt="user" />
         </a>
-        <a href="#">
+        <a className="header-link" href="#">
           Wishlist
           <img src={heart} alt="heart" />
         </a>
-        <a href="#" className="cart">
+        <a href="#" className=" header-link cart">
           <img src={cart} alt="cart" />
         </a>
       </div>

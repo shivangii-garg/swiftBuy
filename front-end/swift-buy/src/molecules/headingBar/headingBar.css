@@ -18,7 +18,7 @@
   margin-right: 372px;
 }
 
-span {
+.typography {
   color: #f1f1f1;
   font-family: Josefin Sans;
   font-size: 16px;
@@ -54,7 +54,7 @@ option {
   cursor: pointer;
 }
 
-a {
+.header-link {
   display: flex;
   color: #f1f1f1 !important;
   font-family: Josefin Sans;
@@ -62,6 +62,7 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  place-items: center;
 }
 
 .cart img {
