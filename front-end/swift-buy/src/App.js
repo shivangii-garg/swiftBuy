@@ -1,5 +1,6 @@
 import Body from "./molecules/body";
 import Corousel from "./molecules/corousel";
+import Footer from "./molecules/footer";
 import HeadingBar from "./molecules/headingBar";
 import NavBar from "./molecules/navBar";
 
@@ -10,7 +11,7 @@ function App() {
       <NavBar /> {/* accidentally, pushed the NavBar code in Swif-3 branch */}
       <Corousel />
       <Body />
-      <h1>SwiftBuy</h1>
+      <Footer />
     </div>
   );
 }
