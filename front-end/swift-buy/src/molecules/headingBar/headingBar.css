@@ -41,19 +41,6 @@ img {
   margin: 2px;
 }
 
-select {
-  margin-right: 5px;
-  width: 23%;
-  background: none;
-  color: white;
-  cursor: pointer;
-}
-
-option {
-  color: #000;
-  cursor: pointer;
-}
-
 .header-link {
   display: flex;
   color: #f1f1f1 !important;

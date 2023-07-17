@@ -1,4 +1,5 @@
 import "./headingBar.css";
+import Dropdown from "../../atoms/dropdown";
 import envelopeSvg from "../../images/envelope-icon.svg";
 import phoneSvg from "../../images/phone-icon.svg";
 import user from "../../images/user.svg";
@@ -15,23 +16,21 @@ const HeadingBar = () => {
         <span className="typography">(1234)56789</span>
       </div>
       <div className="group-two">
-        <select>
-          <option>English</option>
-          <option>Spanish</option>
-          <option>French</option>
-          <option>German</option>
-          <option>Italian</option>
-          <option>Portuguese</option>
-          <option>Russian</option>
-        </select>
-        <select style={{ width: "17%" }}>
-          <option>USD</option>
-          <option>INR</option>
-          <option>EUR</option>
-          <option>CAD</option>
-          <option>CNY</option>
-          <option>MXN</option>
-        </select>
+        <Dropdown
+          options={[
+            "English",
+            "Spanish",
+            "French",
+            "German",
+            "Italian",
+            "Portuguese",
+            "Russian",
+          ]}
+        />
+        <Dropdown
+          style={{ width: "17%" }}
+          options={["USD", "INR", "EUR", "CAD", "CNY", "MXN"]}
+        />
         <a className="header-link" href="#">
           Login
           <img src={user} alt="user" />
