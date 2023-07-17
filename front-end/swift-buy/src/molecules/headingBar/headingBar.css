@@ -51,9 +51,3 @@ img {
   line-height: normal;
   place-items: center;
 }
-
-.cart img {
-  width: 24px;
-  height: 28.364px;
-  flex-shrink: 0;
-}

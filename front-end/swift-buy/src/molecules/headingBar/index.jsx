@@ -5,6 +5,7 @@ import phoneSvg from "../../images/phone-icon.svg";
 import user from "../../images/user.svg";
 import cart from "../../images/cart.svg";
 import heart from "../../images/heart.svg";
+import HeaderLink from "../../atoms/headerLink";
 
 const HeadingBar = () => {
   return (
@@ -31,17 +32,13 @@ const HeadingBar = () => {
           style={{ width: "17%" }}
           options={["USD", "INR", "EUR", "CAD", "CNY", "MXN"]}
         />
-        <a className="header-link" href="#">
-          Login
-          <img src={user} alt="user" />
-        </a>
-        <a className="header-link" href="#">
-          Wishlist
-          <img src={heart} alt="heart" />
-        </a>
-        <a href="#" className=" header-link cart">
-          <img src={cart} alt="cart" />
-        </a>
+        <HeaderLink linkText="Login" imgSrc={user} imgAlt="user" />
+        <HeaderLink linkText="Wishlist" imgSrc={heart} imgAlt="heart" />
+        <HeaderLink
+          imgSrc={cart}
+          imgAlt="cart"
+          imgStyle={{ width: "24px", height: "28.364px" }}
+        />
       </div>
     </div>
   );
