@@ -15,68 +15,6 @@
   align-items: center;
 }
 
-.card {
-  width: 270px;
-  height: 361px;
-  flex-shrink: 0;
-  background: #fff;
-  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
-  margin: 15px;
-  margin-bottom: 0;
-}
-
-.inner-card {
-  width: 270px;
-  height: 236px;
-  flex-shrink: 0;
-  background: #f6f7fb;
-  position: relative;
-}
-
-.card-img {
-  width: 178px;
-  height: 178px;
-  flex-shrink: 0;
-  margin: 46px 52px 12px 40px;
-  position: absolute;
-}
-
-.card-item-details {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.item-name {
-  color: var(--pink, #fb2e86);
-  font-family: Lato;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-top: 15px;
-}
-
-.item-code {
-  color: var(--text, #151875);
-  font-family: Josefin Sans;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 12px;
-}
-
-.item-price {
-  color: var(--text, #151875);
-  font-family: Lato;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 12px;
-}
-
 .featured-products {
   display: flex;
   justify-content: space-between;
