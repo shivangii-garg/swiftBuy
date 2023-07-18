@@ -1,12 +1,14 @@
 import React from "react";
+import { title } from "../../utils";
 import "./footer.css";
+import CategoryContainer from "../../atoms/categoryContainer";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-sections">
         <div className="footer-inner-sec">
-          <span className="footer-title">SwiftBuy</span>
+          <span className="footer-title">{title}</span>
           <div className="sign-up-btn">
             <input
               className="footer-input"
@@ -21,69 +23,37 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-right">
-          <div className="category-container">
-            <span className="footer-rows-heading">Categories</span>
-            <div className="footer-rows-items">
-              <a href="#" className="footer-rows-item">
-                Laptops & Computers
-              </a>
-              <a href="#" className="footer-rows-item">
-                Cameras & Photography
-              </a>
-              <a href="#" className="footer-rows-item">
-                Smart Phones & Tablets
-              </a>
-              <a href="#" className="footer-rows-item">
-                Video Games & Consoles
-              </a>
-              <a href="#" className="footer-rows-item">
-                Waterproof Headphones
-              </a>
-            </div>
-          </div>
-          <div className="category-container">
-            <span className="footer-rows-heading">Customer Care</span>
-            <div className="footer-rows-items">
-              <a href="#" className="footer-rows-item">
-                My Acount
-              </a>
-              <a href="#" className="footer-rows-item">
-                Discount
-              </a>
-              <a href="#" className="footer-rows-item">
-                Returns
-              </a>
-              <a href="#" className="footer-rows-item">
-                Order History
-              </a>
-              <a href="#" className="footer-rows-item">
-                Order Tracking
-              </a>
-            </div>
-          </div>
-          <div className="category-container">
-            <span className="footer-rows-heading">Pages</span>
-            <div className="footer-rows-items">
-              <a href="#" className="footer-rows-item">
-                Blog
-              </a>
-              <a href="#" className="footer-rows-item">
-                Browse the Shop
-              </a>
-              <a href="#" className="footer-rows-item">
-                Category
-              </a>
-              <a href="#" className="footer-rows-item">
-                Pre-Built Pages
-              </a>
-              <a href="#" className="footer-rows-item">
-                Visual Composer Elements
-              </a>
-              <a href="#" className="footer-rows-item">
-                WooCommerce Pages
-              </a>
-            </div>
-          </div>
+          <CategoryContainer
+            heading="Category"
+            items={[
+              "Laptops & Computers",
+              "Cameras & Photography",
+              "Smart Phones & Tablets",
+              " Video Games & Consoles",
+              "Waterproof Headphones",
+            ]}
+          />
+          <CategoryContainer
+            heading="Customer Care"
+            items={[
+              "My Acount",
+              "Discount",
+              "Returns",
+              "Order History",
+              "Order Tracking",
+            ]}
+          />
+          <CategoryContainer
+            heading="Pages"
+            items={[
+              "Blog",
+              "Browse the Shop",
+              "Category",
+              "Pre-Built Pages",
+              "Visual Composer Elements",
+              "WooCommerce Pages",
+            ]}
+          />
         </div>
       </div>
     </div>
