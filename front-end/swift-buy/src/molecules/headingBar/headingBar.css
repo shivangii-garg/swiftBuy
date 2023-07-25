@@ -41,6 +41,19 @@ img {
   margin: 2px;
 }
 
+select {
+  margin-right: 5px;
+  width: 23%;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+option {
+  color: #000;
+  cursor: pointer;
+}
+
 .header-link {
   display: flex;
   color: #f1f1f1 !important;
@@ -50,4 +63,10 @@ img {
   font-weight: 600;
   line-height: normal;
   place-items: center;
+}
+
+.cart img {
+  width: 24px;
+  height: 28.364px;
+  flex-shrink: 0;
 }
