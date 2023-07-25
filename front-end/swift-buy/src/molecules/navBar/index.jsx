@@ -18,7 +18,7 @@ const NavBar = () => {
       <button className="search">
         <input className="navbar-input" type="text"></input>
         <div className="navbar-search-box">
-          <img src={search} />
+          <img src={search} alt="search" />
         </div>
       </button>
     </div>

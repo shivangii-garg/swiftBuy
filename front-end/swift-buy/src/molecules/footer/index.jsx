@@ -3,6 +3,31 @@ import { title } from "../../utils";
 import "./footer.css";
 import CategoryContainer from "../../atoms/categoryContainer";
 
+const categoryItems = [
+  "Laptops & Computers",
+  "Cameras & Photography",
+  "Smart Phones & Tablets",
+  " Video Games & Consoles",
+  "Waterproof Headphones",
+];
+
+const custCareItems = [
+  "My Acount",
+  "Discount",
+  "Returns",
+  "Order History",
+  "Order Tracking",
+];
+
+const pagesItems = [
+  "Blog",
+  "Browse the Shop",
+  "Category",
+  "Pre-Built Pages",
+  "Visual Composer Elements",
+  "WooCommerce Pages",
+];
+
 const Footer = () => {
   return (
     <div className="footer">
@@ -23,37 +48,9 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-right">
-          <CategoryContainer
-            heading="Category"
-            items={[
-              "Laptops & Computers",
-              "Cameras & Photography",
-              "Smart Phones & Tablets",
-              " Video Games & Consoles",
-              "Waterproof Headphones",
-            ]}
-          />
-          <CategoryContainer
-            heading="Customer Care"
-            items={[
-              "My Acount",
-              "Discount",
-              "Returns",
-              "Order History",
-              "Order Tracking",
-            ]}
-          />
-          <CategoryContainer
-            heading="Pages"
-            items={[
-              "Blog",
-              "Browse the Shop",
-              "Category",
-              "Pre-Built Pages",
-              "Visual Composer Elements",
-              "WooCommerce Pages",
-            ]}
-          />
+          <CategoryContainer heading="Category" items={categoryItems} />
+          <CategoryContainer heading="Customer Care" items={custCareItems} />
+          <CategoryContainer heading="Pages" items={pagesItems} />
         </div>
       </div>
     </div>
