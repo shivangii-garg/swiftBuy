@@ -1,11 +1,12 @@
 import React from "react";
 import search from "../../images/search.svg";
+import { title } from "../../utils";
 import "./navBar.css";
 
 const NavBar = () => {
   return (
     <div className="navBar">
-      <span className="navBar-logo">SwiftBuy</span>
+      <span className="navBar-logo">{title}</span>
       <div className="navbar-links">
         <a href="#">Home</a>
         <a href="#">Pages</a>
@@ -17,7 +18,7 @@ const NavBar = () => {
       <button className="search">
         <input className="navbar-input" type="text"></input>
         <div className="navbar-search-box">
-          <img src={search} />
+          <img src={search} alt="search" />
         </div>
       </button>
     </div>
