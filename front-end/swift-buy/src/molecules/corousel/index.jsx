@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  Box,
-  IconButton,
-  useBreakpointValue,
-  Heading,
-  Container,
-} from "@chakra-ui/react";
+import { Box, IconButton, useBreakpointValue } from "@chakra-ui/react";
 import chair from "../../images/chair.png";
 import "./corousel.css";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
@@ -76,6 +70,8 @@ const Corousel = () => {
         sliderData={corouselData}
         buttonText={"Shop Now"}
         rightImgSrc={chair}
+        slider={slider}
+        setSlider={setSlider}
       />
     </Box>
   );

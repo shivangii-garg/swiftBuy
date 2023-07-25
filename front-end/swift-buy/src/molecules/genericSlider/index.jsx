@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import { Box, Heading, Container } from "@chakra-ui/react";
 
-const GenericSlider = ({ settings, sliderData, buttonText, rightImgSrc }) => {
-  const [slider, setSlider] = useState(null);
-
+const GenericSlider = ({
+  settings,
+  sliderData,
+  buttonText,
+  rightImgSrc,
+  slider,
+  setSlider,
+}) => {
   return (
     <Slider {...settings} ref={(slider) => setSlider(slider)}>
       {sliderData.map((card, index) => (
