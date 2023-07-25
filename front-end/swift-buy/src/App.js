@@ -7,10 +7,9 @@ function App() {
   return (
     <div className="App">
       <HeadingBar />
-      <NavBar /> {/* accidentally, pushed the NavBar code in Swif-3 branch */}
+      <NavBar />
       <Corousel />
       <Body />
-      <h1>SwiftBuy</h1>
     </div>
   );
 }
