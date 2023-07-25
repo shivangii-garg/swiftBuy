@@ -1,9 +1,11 @@
 import "./headingBar.css";
+import Dropdown from "../../atoms/dropdown";
 import envelopeSvg from "../../images/envelope-icon.svg";
 import phoneSvg from "../../images/phone-icon.svg";
 import user from "../../images/user.svg";
 import cart from "../../images/cart.svg";
 import heart from "../../images/heart.svg";
+import HeaderLink from "../../atoms/headerLink";
 
 const HeadingBar = () => {
   return (
@@ -15,34 +17,28 @@ const HeadingBar = () => {
         <span className="typography">(1234)56789</span>
       </div>
       <div className="group-two">
-        <select>
-          <option>English</option>
-          <option>Spanish</option>
-          <option>French</option>
-          <option>German</option>
-          <option>Italian</option>
-          <option>Portuguese</option>
-          <option>Russian</option>
-        </select>
-        <select style={{ width: "17%" }}>
-          <option>USD</option>
-          <option>INR</option>
-          <option>EUR</option>
-          <option>CAD</option>
-          <option>CNY</option>
-          <option>MXN</option>
-        </select>
-        <a className="header-link" href="#">
-          Login
-          <img src={user} alt="user" />
-        </a>
-        <a className="header-link" href="#">
-          Wishlist
-          <img src={heart} alt="heart" />
-        </a>
-        <a href="#" className=" header-link cart">
-          <img src={cart} alt="cart" />
-        </a>
+        <Dropdown
+          options={[
+            "English",
+            "Spanish",
+            "French",
+            "German",
+            "Italian",
+            "Portuguese",
+            "Russian",
+          ]}
+        />
+        <Dropdown
+          style={{ width: "17%" }}
+          options={["USD", "INR", "EUR", "CAD", "CNY", "MXN"]}
+        />
+        <HeaderLink linkText="Login" imgSrc={user} imgAlt="user" />
+        <HeaderLink linkText="Wishlist" imgSrc={heart} imgAlt="heart" />
+        <HeaderLink
+          imgSrc={cart}
+          imgAlt="cart"
+          imgStyle={{ width: "24px", height: "28.364px" }}
+        />
       </div>
     </div>
   );
